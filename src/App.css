@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: deepskyblue;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.light {
+  background-color: deepskyblue;
+  color: #ffffff;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* App Container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #cc0000;
+  text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.7);
+}
+
+/* Dark Mode Header */
+.dark h1 {
+  color: #ffcc00;
+  text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.7);
+}
+
+/* SortBar */
+.sort-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Bot Collection */
+.bot-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Bot Card */
+.bot-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 212, 255, 0.4);
+}
+
+/* Dark Mode Bot Card */
+.dark .bot-card {
+  background-color: #222;
+  box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+/* Bot Image */
+.bot-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #00d4ff;
+}
+
+/* Dark Mode Bot Image */
+.dark .bot-card img {
+  border: 3px solid #ffcc00;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Light Mode Buttons */
+.add-btn {
+  background-color: #00d4ff;
+  color: #121212;
+}
+
+.add-btn:hover {
+  background-color: #00a3cc;
+}
+
+.delete-btn {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Dark Mode Buttons */
+.dark .add-btn {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+.dark .add-btn:hover {
+  background-color: #e6b800;
+}
+
+.dark .delete-btn {
+  background-color: #ff6666;
+}
+
+.dark .delete-btn:hover {
+  background-color: #ff3333;
+}
+
+/* YourBotArmy Section */
+.your-army {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode YourBotArmy */
+.dark .your-army {
+  background-color: #333;
+  box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+  background-color: #1e1e1e;
+  border-top: 2px solid #00d4ff;
+}
+
+/* Dark Mode Footer */
+.dark .footer {
+  background-color: #222;
+  border-top: 2px solid #ffcc00;
+}
